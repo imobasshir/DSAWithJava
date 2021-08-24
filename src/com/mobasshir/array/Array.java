@@ -2,7 +2,6 @@ package com.mobasshir.array;
 
 import java.util.Arrays;
 
-import javax.swing.plaf.basic.BasicInternalFrameTitlePane.SystemMenuBar;
 
 public class Array {
     public static void main(String[] args) {
@@ -20,6 +19,6 @@ public class Array {
 
         System.out.println(Arrays.toString(rollNo));
         System.out.println(Arrays.toString(rollNo2));
-
+        System.out.println(rollNo2[3]);
     }
 }
