@@ -1,0 +1,5 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.home": "/home/mobasshir/.jdks/openjdk-16.0.2"
+}
