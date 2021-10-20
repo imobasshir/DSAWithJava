@@ -1,5 +1,5 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "java.home": "/home/mobasshir/.jdks/openjdk-16.0.2"
+    "java.home": "C:\\Program Files\\Java\\jdk11.0_8"
 }
