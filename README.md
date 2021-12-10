@@ -1,6 +1,6 @@
 ## DSA With Java
 
-This is folder of DSA practice.
+This is folder of DSA learning and practice.
 
 ## Folder Structure
 
