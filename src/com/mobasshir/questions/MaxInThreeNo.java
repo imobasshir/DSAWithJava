@@ -5,6 +5,7 @@ public class MaxInThreeNo {
         int a = 40;
         int b = 60;
         int c = 6;
+        System.out.println(maximum(a, maximum(b, c)));
         System.out.println(max(a, b, c));
         System.out.println(min(a, b, c));
     }
