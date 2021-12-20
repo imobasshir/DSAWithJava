@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class SufulleArr {
     public static void main(String[] args) {
-        int[] arr = { 1, 1, 2, 2 };
-        int n = 2;
+        int[] arr = { 1, 1, 1, 2, 2, 3 };
+        int n = 3;
         int[] ans = shuffle(arr, n);
         System.out.println(Arrays.toString(ans));
     }
