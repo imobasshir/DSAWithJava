@@ -1,8 +1,10 @@
-package com.mobasshir.questions;
+package com.mobasshir.questions.arrays;
 
 import java.util.Arrays;
 
 public class SufulleArr {
+    // https://leetcode.com/problems/shuffle-the-array/
+    // Shuffle the Array
     public static void main(String[] args) {
         int[] arr = { 1, 1, 1, 2, 2, 3 };
         int n = 3;

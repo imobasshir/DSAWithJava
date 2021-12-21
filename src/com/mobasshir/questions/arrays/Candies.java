@@ -1,4 +1,4 @@
-package com.mobasshir.questions;
+package com.mobasshir.questions.arrays;
 
 import java.util.ArrayList;
 import java.util.List;
