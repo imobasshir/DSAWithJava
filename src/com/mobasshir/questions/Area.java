@@ -4,6 +4,7 @@ public class Area {
     public static void main(String[] args) {
         System.out.println(areaCircle(5));
         System.out.println(areaCircleWithoutMathFunction(5));
+        System.out.println(areaCircleWithoutMathFunction(6));
         System.out.println(areaTriangle(5, 4));
         System.out.println(areaEqTriangle(5));
     }
