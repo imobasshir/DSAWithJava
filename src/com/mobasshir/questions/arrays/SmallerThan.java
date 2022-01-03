@@ -8,6 +8,7 @@ public class SmallerThan {
     public static void main(String[] args) {
         int[] nums = { 8, 1, 2, 2, 3 };
         int[] arr = { 7, 2, 4, 9, 1 };
+        System.out.println(Arrays.toString(smallerNumbersThanCurrent(arr)));
         System.out.println(Arrays.toString(smallerNumbersThanCurrent(nums)));
     }
 
