@@ -27,4 +27,4 @@ public class Candies {
     }
 }
 // Important Question
-// LeetCode
+// LeetCode Question
