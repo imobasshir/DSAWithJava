@@ -33,4 +33,3 @@ public class SmallerThan {
         return minValArr;
     }
 }
-// Important Question

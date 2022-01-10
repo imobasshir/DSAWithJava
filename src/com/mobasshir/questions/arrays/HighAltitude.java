@@ -19,6 +19,4 @@ public class HighAltitude {
         }
         return max;
     }
-
-    // Important Questions
 }

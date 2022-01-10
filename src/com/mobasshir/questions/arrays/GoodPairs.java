@@ -20,5 +20,3 @@ public class GoodPairs {
         return count;
     }
 }
-// Important Question
-// LeetCode Question
