@@ -4,7 +4,6 @@ public class Area {
     public static void main(String[] args) {
         System.out.println(areaCircle(5));
         System.out.println(areaCircle(6));
-        System.out.println(areaCircle(55));
         System.out.println(areaCircleWithoutMathFunction(5));
         System.out.println(areaCircleWithoutMathFunction(6));
         System.out.println(areaTriangle(5, 4));
@@ -25,6 +24,7 @@ public class Area {
         int area = (b * h) / 2;
         return area;
     }
+
     static float areaEqTriangle(int a) {
         float area = (1.73f * a * a) / 4;
         return area;
