@@ -5,7 +5,7 @@ public class Constructor {
         Student student1 = new Student();
         System.out.println(student1.rollno);
         System.out.println(student1.name);
-        System.out.println(student1.marks);
+        // System.out.println(student1.marks);
     }
 }
 
@@ -16,7 +16,7 @@ class Student {
 
     Student() {
         this.rollno = 1;
-        this.name = "Ibrahim";
+        this.name = "Mobasshir";
         this.marks = 79.9f;
     }
 }
