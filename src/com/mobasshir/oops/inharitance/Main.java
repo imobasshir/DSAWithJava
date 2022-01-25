@@ -18,7 +18,12 @@ public class Main {
         // System.out.println(newBox1.l + " " + newBox1.b + " " + newBox1.h + " " +
         // newBox1.w);
 
-        Box b1 = new BoxWt(3, 4, 5, 6);
-        System.out.println(b1.l + " " + b1.b + " " + b1.h);
+        // Box b1 = new BoxWt(3, 4, 5, 6);
+        // System.out.println(b1.l + " " + b1.b + " " + b1.h);
+
+        BoxPrice b1 = new BoxPrice();
+        System.out.println(b1.l + " " + b1.b + " " + b1.h + " " + b1.w + " " + b1.cost);
+        BoxPrice b2 = new BoxPrice(2, 3, 4, 5, 6);
+        System.out.println(b2.l + " " + b2.b + " " + b2.h + " " + b2.w + " " + b2.cost);
     }
 }
