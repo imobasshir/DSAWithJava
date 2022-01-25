@@ -11,9 +11,14 @@ public class Main {
         // Box box1 = new Box(box);
         // System.out.println(box1.l + " " + box1.b + " " + box1.h);
 
-        BoxWt newBox = new BoxWt();
-        BoxWt newBox1 = new BoxWt(3, 4, 5, 2);
-        System.out.println(newBox.l + " " + newBox.b + " " + newBox.h + " " + newBox.w);
-        System.out.println(newBox1.l + " " + newBox1.b + " " + newBox1.h + " " + newBox1.w);
+        // BoxWt newBox = new BoxWt();
+        // BoxWt newBox1 = new BoxWt(3, 4, 5, 2);
+        // System.out.println(newBox.l + " " + newBox.b + " " + newBox.h + " " +
+        // newBox.w);
+        // System.out.println(newBox1.l + " " + newBox1.b + " " + newBox1.h + " " +
+        // newBox1.w);
+
+        Box b1 = new BoxWt(3, 4, 5, 6);
+        System.out.println(b1.l + " " + b1.b + " " + b1.h);
     }
 }
