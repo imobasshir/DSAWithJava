@@ -1,8 +1,8 @@
 package com.mobasshir.oops.accessControl;
 
 public class A {
-    private int num;
-    String name;
+    protected int num;
+    protected String name;
     int[] arr;
 
     public A(int num, String name) {
