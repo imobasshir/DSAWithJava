@@ -2,7 +2,7 @@ package com.mobasshir.oops.accessControl;
 
 public class A {
     protected int num;
-    protected String name;
+    String name;
     int[] arr;
 
     public A(int num, String name) {
