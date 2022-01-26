@@ -5,7 +5,7 @@ public class A {
     String name;
     int[] arr;
 
-    protected A(int num, String name) {
+    A(int num, String name) {
         this.num = num;
         this.name = name;
         this.arr = new int[34];
