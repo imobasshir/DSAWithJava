@@ -7,5 +7,8 @@ public class Main {
         car.start();
         car.stop();
         car.accelarate();
+        Media media = new MediaPlayer();
+        media.start();
+        media.stop();
     }
 }
