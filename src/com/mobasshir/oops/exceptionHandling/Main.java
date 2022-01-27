@@ -5,7 +5,13 @@ public class Main {
         int a = 5;
         int b = 0;
         try {
-            divide(a, b);
+            // divide(a, b);
+            String name = "Mobasshir";
+            if (name.equals("Mobasshir")) {
+                throw new MyCustomException("My Exception occours");
+            }
+        } catch (MyCustomException e) {
+            System.out.println(e.getMessage());
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());
         } finally {
