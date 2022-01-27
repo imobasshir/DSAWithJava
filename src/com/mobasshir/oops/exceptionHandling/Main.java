@@ -13,7 +13,7 @@ public class Main {
         }
     }
 
-    private static int divide(int a, int b) {
+    private static int divide(int a, int b) throws ArithmeticException {
         if (b == 0) {
             throw new ArithmeticException("please do not divide by 0");
         }
