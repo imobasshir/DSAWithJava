@@ -6,7 +6,7 @@ public class Class {
         student1.rollno = 1;
         student1.name = "Mobasshir Imam";
         student1.marks = 78.9f;
-        System.out.println("Marks of Mobasshir is: " + student1.marks);
+        System.out.println("Marks of "+ student1.name+" is: " + student1.marks);
     }
 }
 
