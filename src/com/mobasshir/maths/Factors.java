@@ -4,8 +4,10 @@ import java.util.ArrayList;
 
 public class Factors {
     public static void main(String[] args) {
-        // factors(20);
-        // factors1(36);
+        factors(20);
+        System.out.println();
+        factors1(36);
+        System.out.println();
         factors2(36);
     }
 
