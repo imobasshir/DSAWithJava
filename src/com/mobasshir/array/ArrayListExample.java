@@ -8,12 +8,12 @@ public class ArrayListExample {
         ArrayList<Integer> list = new ArrayList<>(5);
         Scanner in = new Scanner(System.in);
         list.add(678);
-        // list.add(607);
+        list.add(607);
         // list.add(6147);
         // list.add(4567);
         // list.add(6987);
         // list.add(967);
-        // System.out.println(list.contains(607));
+        System.out.println(list.contains(607));
         System.out.println(list);
         // list.set(3, 55);
         // System.out.println(list);
