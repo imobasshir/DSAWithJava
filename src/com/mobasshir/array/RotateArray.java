@@ -28,15 +28,6 @@ public class RotateArray {
     }
 
     static void reverse(int[] arr, int start, int end) {
-        // start = 0;
-        // end = arr.length - 1;
-        // while (start < end) {
-        //     int temp = arr[start];
-        //     arr[start] = arr[end];
-        //     arr[end] = temp;
-        //     start++;
-        //     end--;
-        // }
         for (int i = start, j = end; i < j; i++, j--) {
             int temp = arr[i];
             arr[i] = arr[j];
@@ -44,3 +35,10 @@ public class RotateArray {
         }
     }
 }
+
+// Approach
+/**
+ * We have to divide an array in two parts about the index which we
+ * have to rotate an array then reverse 1st part then reverse 2nd part then
+ * reverse whole array at a time.
+ */
