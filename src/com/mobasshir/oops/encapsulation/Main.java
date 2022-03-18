@@ -1,6 +1,6 @@
 package com.mobasshir.oops.encapsulation;
 
-public class StudentDetails {
+public class Main {
     public static void main(String args[]) {
         Student obj = new Student();
 
