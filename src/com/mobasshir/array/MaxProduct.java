@@ -2,7 +2,8 @@ package com.mobasshir.array;
 
 public class MaxProduct {
     public static void main(String[] args) {
-        int[] arr = { 2, 5, -9, 8, 6, 0, 4 };
+        // int[] arr = { 2, 5, -9, 8, 6, 0, 4 };
+        int[] arr = { 2, 8, -4, 6, 2, 9, 3 };
         System.out.println(maxProduct(arr));
     }
 
