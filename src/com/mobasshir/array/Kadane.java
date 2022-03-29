@@ -2,8 +2,8 @@ package com.mobasshir.array;
 
 public class Kadane {
     public static void main(String[] args) {
-        // int[] arr = {1, -2, -3, 4, -1, 2, 1};
-        int[] arr = {-1, 2, -2, 5, 7, -3, 1};
+        int[] arr = {1, -2, -3, 4, -1, 2, 1};
+        // int[] arr = {-1, 2, -2, 5, 7, -3, 1};
         System.out.println(kadane(arr));
     }
     
