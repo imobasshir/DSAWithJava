@@ -1,4 +1,4 @@
-package com.mobasshir.array;
+package com.mobasshir.array.subarrays;
 
 public class Kadane {
     public static void main(String[] args) {

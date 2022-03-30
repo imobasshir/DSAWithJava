@@ -1,4 +1,4 @@
-package com.mobasshir.array;
+package com.mobasshir.array.subarrays;
 
 public class MaxSumCircularSubarray {
     public static void main(String[] args) {
