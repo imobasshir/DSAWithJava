@@ -27,11 +27,11 @@ public class MaxProduct {
         int min = arr[0];
         int ans = arr[0];
         for (int i = 0; i < arr.length; i++) {
-            // if (arr[i] == 0) {
-            //     max = 1;
-            //     min = 1;
-            //     continue;
-            // }
+            if (arr[i] == 0) {
+                max = 1;
+                min = 1;
+                continue;
+            }
             if (arr[i] < 0) {
                 int temp = max;
                 max = min;
