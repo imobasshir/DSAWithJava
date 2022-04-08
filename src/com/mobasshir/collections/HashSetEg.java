@@ -1,4 +1,4 @@
-package com.collections;
+package com.mobasshir.collections;
 
 import java.util.HashSet;
 
