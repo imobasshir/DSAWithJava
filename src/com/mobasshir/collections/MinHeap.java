@@ -3,7 +3,7 @@ package com.mobasshir.collections;
 import java.util.Iterator;
 import java.util.PriorityQueue;
 
-public class HeapDataStruct {
+public class MinHeap {
     public static void main(String[] args) {
         PriorityQueue<Integer> heap = new PriorityQueue<>();
 
@@ -23,7 +23,7 @@ public class HeapDataStruct {
 
         heap.remove(50);
         System.out.println(heap);
-        heap.poll();
+        heap.poll();            // to remove top most priority element
 
         System.out.println(heap.toArray());
         System.out.println(heap.toString());
