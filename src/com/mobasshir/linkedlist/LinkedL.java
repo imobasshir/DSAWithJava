@@ -43,6 +43,35 @@ public class LinkedL {
         currNode.next = newNode;
     }
 
+    // deletion at start
+    public void deleteStart() {
+        if (head == null) {
+            System.out.println("list is empty");
+            return;
+        }
+        head = head.next;
+    }
+
+    // deleteion at last
+    public void delete() {
+        if (head == null) {
+            System.out.println("Empty list");
+            return;
+        }
+        if (head.next == null) {
+            head = null;
+            return;
+        }
+        Node secLast = head;
+        Node last = head.next;
+        while (last.next != null) {
+            last = last.next;
+            secLast = secLast.next;
+        }
+        secLast.next = null;
+    }
+
+    // print linked list
     public void printList() {
         if (head == null) {
             System.out.println("Empty list");
@@ -66,6 +95,15 @@ public class LinkedL {
         
         list.add("world");
         list.printList();
-        
+
+        list.deleteStart();
+        list.printList();
+
+        list.add("mobasshir");
+        list.add("imam");
+        list.printList();
+
+        list.delete();
+        list.printList();
     }
 }
