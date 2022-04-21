@@ -2,15 +2,23 @@ package com.mobasshir.linkedlist;
 
 public class LinkedL {
     Node head;
+    private int size;
+
+    LinkedL() {
+        this.size = 0;
+    }
+
     /**
      * Node
      */
     public class Node {
         String data;
         Node next;
+
         Node(String data) {
             this.data = data;
             this.next = null;
+            size++;
         }
     }
 
@@ -49,6 +57,7 @@ public class LinkedL {
             System.out.println("list is empty");
             return;
         }
+        size--;
         head = head.next;
     }
 
@@ -58,6 +67,7 @@ public class LinkedL {
             System.out.println("Empty list");
             return;
         }
+        size--;
         if (head.next == null) {
             head = null;
             return;
@@ -79,31 +89,42 @@ public class LinkedL {
         }
         Node currNode = head;
         while (currNode != null) {
-            System.out.print(currNode.data+" -> ");
+            System.out.print(currNode.data + " -> ");
             currNode = currNode.next;
         }
         System.out.println("null");
+    }
+
+    // size
+    public int getSize() {
+        return size;
     }
 
     public static void main(String[] args) {
         LinkedL list = new LinkedL();
         list.addFirst("hello");
         list.printList();
+        System.out.println(list.getSize());
 
         list.addFirst("hey");
         list.printList();
-        
+        System.out.println(list.getSize());
+
         list.add("world");
         list.printList();
+        System.out.println(list.getSize());
 
         list.deleteStart();
         list.printList();
+        System.out.println(list.getSize());
 
         list.add("mobasshir");
         list.add("imam");
         list.printList();
+        System.out.println(list.getSize());
 
         list.delete();
         list.printList();
+        System.out.println(list.getSize());
     }
 }
