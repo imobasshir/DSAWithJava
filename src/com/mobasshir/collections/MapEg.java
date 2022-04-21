@@ -22,6 +22,7 @@ public class MapEg {
         for (Integer i : map.values()) {
             System.out.println(i);
         }
+        map.put("Mi", 5);
         System.out.println(map.get("Mobasshir"));
         System.out.println(map.getOrDefault("Mi", 0));
         System.out.println(map.containsKey("Btech"));
