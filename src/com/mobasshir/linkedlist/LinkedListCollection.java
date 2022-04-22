@@ -35,5 +35,7 @@ public class LinkedListCollection {
 
         list.removeFirst();
         System.out.println(list);
+
+        list.add(5, 6);
     }
 }

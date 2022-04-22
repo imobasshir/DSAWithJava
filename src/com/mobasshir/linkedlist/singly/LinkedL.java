@@ -1,4 +1,4 @@
-package com.mobasshir.linkedlist;
+package com.mobasshir.linkedlist.singly;
 
 public class LinkedL {
     Node head;
