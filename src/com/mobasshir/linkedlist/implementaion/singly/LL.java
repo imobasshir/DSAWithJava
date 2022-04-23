@@ -142,4 +142,29 @@ public class LL {
         }
         temp.next = temp.next.next;
     }
+
+    // reverse linked list
+    public Node reverse() {
+        Node prev = null;
+        Node curr = head;
+        while (curr != null) {
+            Node next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+        return prev;
+    }
+
+    public Node reverseRecursion(Node head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        Node newHead = reverseRecursion(head.next);
+        Node nextHead = head.next;
+        nextHead.next = head;
+        head = null;
+        return newHead;
+    }
 }

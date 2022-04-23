@@ -29,5 +29,16 @@ public class Main {
         list.delete(2);
         list.display();
         System.out.println(list.getSize());
+
+        list.reverse();
+        list.display();
+
+        list.deleteLast();
+        list.reverse();
+        list.display();
+
+        list.deleteLast();
+        list.reverse();
+        list.display();
     }
 }
