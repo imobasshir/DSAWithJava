@@ -40,5 +40,12 @@ public class Main {
         list.deleteLast();
         list.reverse();
         list.display();
+
+        list.deleteLast();
+        list.reverse();
+        list.display();
+
+        // list.reverseRecursion(list.Node);
+        list.display();
     }
 }

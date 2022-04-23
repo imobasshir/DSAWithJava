@@ -145,6 +145,9 @@ public class LL {
 
     // reverse linked list
     public Node reverse() {
+        if (head == null || head.next == null) {
+            return head;
+        }
         Node prev = null;
         Node curr = head;
         while (curr != null) {
