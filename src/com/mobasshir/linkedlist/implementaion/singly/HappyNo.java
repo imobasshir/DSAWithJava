@@ -7,7 +7,7 @@ public class HappyNo {
         do {
             slow = findSq(slow);
             fast = findSq(findSq(fast));
-        } while(slow != fast);
+        } while (slow != fast);
         if (slow == 1) {
             return true;
         }
@@ -23,6 +23,7 @@ public class HappyNo {
         }
         return ans;
     }
+
     public static void main(String[] args) {
         System.out.println(isHappy(19));
     }
