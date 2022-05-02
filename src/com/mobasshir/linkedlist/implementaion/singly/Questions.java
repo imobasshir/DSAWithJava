@@ -39,6 +39,48 @@ public class Questions {
             
         // }
     // }
+
+    public ListNode reverse(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while (curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        return prev;
+    }
+    
+    public ListNode findMid(ListNode head) {
+        ListNode first = head;
+        ListNode second = head;
+        while (first.next != null && first.next.next != null) {
+            first = first.next.next;
+            second = second.next;
+        }
+        return second;
+    }
+    
+    public boolean isPalindrome(ListNode head) {
+        if (head == null || head.next == null) {
+            return true; 
+        }
+        // middle element of linked list is end + 1 of first half
+        ListNode mid = findMid(head);
+        ListNode secSrt = reverse(mid.next);
+        
+        ListNode fstSrt = head;
+        while (secSrt != null) {
+            if (fstSrt.val != secSrt.val) {
+                return false;
+            }
+            fstSrt = fstSrt.next;
+            secSrt = secSrt.next;
+        }
+        return true;
+    }
+    
     public static void main(String[] args) {
 
     }
