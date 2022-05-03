@@ -48,6 +48,7 @@ public class Questions {
             prev = curr;
             curr = next;
         }
+        head = prev;
         return prev;
     }
 
@@ -78,6 +79,33 @@ public class Questions {
             secSrt = secSrt.next;
         }
         return true;
+    }
+
+    public ListNode merge1(ListNode head) {
+        ListNode fst = head;
+        ListNode mid = findMid(head);
+        ListNode sec = reverse(mid.next);
+        ListNode dummy = new ListNode(0);
+        ListNode temp = dummy;
+        while (true) {
+            if (fst == null) {
+                temp.next = sec;
+                break;
+            }
+            if (sec == null) {
+                temp.next = fst;
+                break;
+            }
+            if (fst.val >= sec.val) {
+                temp.next = sec;
+                sec = sec.next;
+            } else {
+                temp.next = fst;
+                fst = fst.next;
+            }
+            temp = temp.next;
+        }
+        return dummy.next;
     }
 
     public static void main(String[] args) {
