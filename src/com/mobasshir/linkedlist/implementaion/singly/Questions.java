@@ -31,14 +31,13 @@ public class Questions {
         return head;
     }
 
-    // public ListNode mergeTwo(ListNode list1, ListNode list2) {
-        // ListNode f = list1.head;
-        // ListNode s = list2.head;
+    public void mergeTwo(ListNode list1, ListNode list2) {
+        ListNode f = list1;
+        ListNode s = list2;
 
-        // while (f != null && s != null) {
-            
-        // }
-    // }
+        while (f != null && s != null) {
+        }
+    }
 
     public ListNode reverse(ListNode head) {
         ListNode prev = null;
@@ -51,7 +50,7 @@ public class Questions {
         }
         return prev;
     }
-    
+
     public ListNode findMid(ListNode head) {
         ListNode first = head;
         ListNode second = head;
@@ -61,15 +60,15 @@ public class Questions {
         }
         return second;
     }
-    
+
     public boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) {
-            return true; 
+            return true;
         }
         // middle element of linked list is end + 1 of first half
         ListNode mid = findMid(head);
         ListNode secSrt = reverse(mid.next);
-        
+
         ListNode fstSrt = head;
         while (secSrt != null) {
             if (fstSrt.val != secSrt.val) {
@@ -80,7 +79,7 @@ public class Questions {
         }
         return true;
     }
-    
+
     public static void main(String[] args) {
 
     }
