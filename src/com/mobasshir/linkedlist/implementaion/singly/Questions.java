@@ -108,6 +108,24 @@ public class Questions {
         return dummy.next;
     }
 
+    public void reorder(ListNode head) {
+        if (head == null || head.next == null)
+            return;
+        ListNode mid = findMid(head);
+        ListNode second = reverse(mid);
+        ListNode first = head;
+        while (first != null && second != null) {
+            ListNode temp = first.next;
+            first.next = second;
+            first = temp;
+            temp = second.next;
+            second.next = first;
+            second = temp;
+        }
+        if (first != null)
+            first.next = null;
+    }
+
     public static void main(String[] args) {
 
     }
