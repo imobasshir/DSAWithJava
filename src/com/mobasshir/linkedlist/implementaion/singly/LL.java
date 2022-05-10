@@ -2,7 +2,7 @@ package com.mobasshir.linkedlist.implementaion.singly;
 
 public class LL {
     private Node head;
-    // private Node tail;
+    private Node tail;
 
     private int size;
     public LL() {
