@@ -13,8 +13,8 @@ public class MaxHeap {
         arr[6] = 20;
         int value = 60;
         int n = 6;
-        delete(arr, n);
-        // add(arr, n, value);
+        // delete(arr, n);
+        add(arr, n, value);
         System.out.println(Arrays.toString(arr));
 
     }
@@ -40,7 +40,7 @@ public class MaxHeap {
         n = n + 1;
         arr[n] = value;
         int i = n;
-        while (i > 0) {
+        while (i > 1) {
             int parent = (n) / 2;
             if (arr[i] > arr[parent]) {
                 swap(arr, parent, i);
