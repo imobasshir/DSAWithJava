@@ -20,13 +20,13 @@ public class MaxHeap {
     }
 
     private static void delete(int[] arr, int n) {
-        arr[1] = arr[n];
+        arr[0] = arr[n];
         n = n - 1;
-        int i = 1;
+        int i = 0;
         while (i < n) {
-            int left = arr[2 * i];
-            int right = arr[2 * i] + 1;
-            int large = left > right ? 2 * i : 2 * i + 1;
+            int left = arr[2 * i] + 1;
+            int right = arr[2 * i] + 2;
+            int large = left > right ? 2 * i + 1 : 2 * i + 2;
             if (arr[i] < arr[large]) {
                 swap(arr, large, i);
                 i = large;
@@ -38,10 +38,10 @@ public class MaxHeap {
 
     private static void add(int[] arr, int n, int value) {
         n = n + 1;
-        arr[n] = value;
-        int i = n;
-        while (i > 1) {
-            int parent = (n) / 2;
+        arr[n - 1] = value;
+        int i = n - 1;
+        while (i > 0) {
+            int parent = (n - 1) / 2;
             if (arr[i] > arr[parent]) {
                 swap(arr, parent, i);
                 i = parent;
