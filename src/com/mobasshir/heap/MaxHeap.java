@@ -13,7 +13,7 @@ public class MaxHeap {
         arr[6] = 20;
         int value = 60;
         int n = 6;
-        // delete(arr, n);
+        delete(arr, n);
         add(arr, n, value);
         System.out.println(Arrays.toString(arr));
 
