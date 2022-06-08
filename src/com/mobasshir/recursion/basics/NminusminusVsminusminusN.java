@@ -12,7 +12,7 @@ public class NminusminusVsminusminusN {
         System.out.println(n);
 
         // this means pass the value then subtract
-        nminusminus(n--);
+        // nminusminus(n--);
 
         // this means subtract then pass the value
         nminusminus(--n);
