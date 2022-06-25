@@ -1,6 +1,6 @@
 package com.mobasshir.array.slidingWindow;
 
-public class MaxOfSubarray {
+public class MaxSumOfAllSubarrayOfKSize {
     public static void main(String[] args) {
         // Find max sum of subarray of size n
         int[] arr = { 2, 3, 5, 2, 9, 7, 1 };
