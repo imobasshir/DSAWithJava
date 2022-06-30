@@ -43,6 +43,7 @@ public class NSR {
                     break;
                 }
                 ans[i] = -1;
+                
             }
         }
         return ans;
