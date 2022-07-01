@@ -12,7 +12,7 @@ public class QueueUsingStack {
         queue.add(5);
 
         for (int i = 0; i < 5; i++) {
-            System.out.println(queue.remove());
+            System.out.println(queue.remove());  
         }
     }
 
