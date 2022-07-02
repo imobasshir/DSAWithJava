@@ -46,6 +46,6 @@ public class NSL {
                 ans[i] = -1;
             }
         }
-        return ans;
+        return ans;  
     }
 }
