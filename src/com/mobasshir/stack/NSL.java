@@ -41,6 +41,7 @@ public class NSL {
             for (int j = i - 1; j >= 0; j--) {
                 if (arr[j] < arr[i]) {
                     ans[i] = arr[j];
+                    
                     break;
                 }
                 ans[i] = -1;
