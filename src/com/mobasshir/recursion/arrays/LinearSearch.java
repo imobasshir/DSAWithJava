@@ -10,6 +10,19 @@ public class LinearSearch {
         System.out.println(linearSearchIdxLast(arr, 18, arr.length - 1));
         linearSearchFindAllIdx(arr, 18, 0);
         System.out.println(list);
+        System.out.println(ls(arr, 18, 0));
+    }
+
+    private static ArrayList<Integer> ls(int[] arr, int target, int i) {
+        ArrayList<Integer> li = new ArrayList<>();
+        if (i == arr.length - 1) {
+            return li;
+        }
+        if (arr[i] == target) {
+            li.add(i);
+        }
+        ls(arr, target, i + 1);
+        return li;
     }
 
     private static int linearSearchIdxLast(int[] arr, int target, int i) {
