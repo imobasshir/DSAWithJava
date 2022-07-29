@@ -6,36 +6,31 @@ public class QuickSort {
     public static void main(String[] args) {
         int[] arr = { 5, 4, 3, 2, 1, 6 };
         // int[] arr = { 8, 3, 4, 12, 5, 6 };
-        sort(arr, 0, arr.length - 1);
+        quicksort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
     }
 
-    static void sort(int[] arr, int low, int high) {
-        if (low >= high) {
-            return;
+    static void quicksort(int[] arr, int low, int high) {
+        if (low < high) {
+            int p = partition(arr, low, high);
+            quicksort(arr, low, p - 1);
+            quicksort(arr, p + 1, high);
         }
-        int s = low;
-        int e = high;
+    }
 
-        int m = s + (e - s) / 2;
-        int pivot = arr[m];
-        while (s <= e) {
-            while (arr[s] < pivot) {
-                s++;
-            }
-            while (arr[e] > pivot) {
-                e--;
-            }
+    static int partition(int[] arr, int low, int high) {
+        int p = low, j;
+        for (j = low + 1; j <= high; j++)
+            if (arr[j] < arr[low])
+                swap(arr, ++p, j);
 
-            if (s <= e) {
-                int temp = arr[s];
-                arr[s] = arr[e];
-                arr[e] = temp;
-                s++;
-                e--;
-            }
-            sort(arr, low, e);
-            sort(arr, s, high);
-        }
+        swap(arr, low, p);
+        return p;
+    }
+
+    static void swap(int[] arr, int low, int pivot) {
+        int tmp = arr[low];
+        arr[low] = arr[pivot];
+        arr[pivot] = tmp;
     }
 }
