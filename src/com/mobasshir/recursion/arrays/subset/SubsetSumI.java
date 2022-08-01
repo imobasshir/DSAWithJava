@@ -23,7 +23,7 @@ public class SubsetSumI {
     static void func(int i, int sum, ArrayList<Integer> arr, int N, ArrayList<Integer> sumSubset) {
         if(i == N) {
             sumSubset.add(sum);
-            return;
+            return; 
         }
         // pick element
         func(i + 1, sum + arr.get(i), arr, N, sumSubset);
