@@ -24,7 +24,7 @@ public class SubsetSumII {
                 continue;
             ls.add(nums[i]);
             helper(res, ls, nums, i + 1);
-            ls.remove(ls.size() - 1);
+            ls.remove(ls.size() - 1);     
         }
     }
 }
