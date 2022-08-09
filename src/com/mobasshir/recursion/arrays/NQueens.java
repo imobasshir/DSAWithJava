@@ -6,7 +6,7 @@ import java.util.List;
 
 public class NQueens {
     public static void main(String[] args) {
-        int n = 4;
+        int n = 6;
         helper(new ArrayList<String>(), 0, new boolean[n], new boolean[2 * n - 1], new boolean[2 * n - 1], n);
     }
 
