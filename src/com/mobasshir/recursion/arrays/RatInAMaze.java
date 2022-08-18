@@ -53,7 +53,7 @@ public class RatInAMaze {
     }
 
     public static void main(String[] args) {
-        int n = 4;
+        int n = 4;     
         int[][] a = { { 1, 0, 0, 0 }, { 1, 1, 0, 1 }, { 1, 1, 0, 0 }, { 0, 1, 1, 1 } };
         ArrayList<String> res = findPath(a, n);
         if (res.size() > 0) {
