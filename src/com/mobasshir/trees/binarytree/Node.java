@@ -1,7 +1,7 @@
 package com.mobasshir.trees.binarytree;
 
 public class Node {
-    int data;
+    public int data;
     public Node left;
     public Node right;
 
