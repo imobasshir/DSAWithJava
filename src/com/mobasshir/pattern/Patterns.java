@@ -10,7 +10,10 @@ public class Patterns {
         // patterns6(5);
         // patterns7(5);
         // patterns8(5);
-        patterns9(5);
+        // patterns9(5);
+        // patterns10(5);
+        // patterns11(5);
+        patterns12(5);
     }
 
     static void patterns1(int n) {
@@ -78,6 +81,7 @@ public class Patterns {
             System.out.println();
         }
     }
+
     static void patterns8(int n) {
         int t = n;
         for (int i = 0; i <= n; i++) {
@@ -111,6 +115,50 @@ public class Patterns {
                 System.out.print("* ");
             }
             t--;
+            System.out.println();
+        }
+    }
+
+    static void patterns10(int n) {
+        int a = 1, b = 0;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (j % 2 == 0) {
+                    System.out.print(a + " ");
+                } else {
+                    System.out.print(b + " ");
+                }
+            }
+            System.out.println();
+        }
+    }
+
+    static void patterns11(int n) {
+        int a = 1, b = 0;
+        boolean flag = true;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 0; j < i; j++) {
+                if (flag == true) {
+                    System.out.print(a + " ");
+                } else {
+                    System.out.print(b + " ");
+                }
+                flag = !flag;
+            }
+            System.out.println();
+        }
+    }
+
+    static void patterns12(int n) {
+        for (int i = 1; i <= n; ++i) {
+            for (int j = 0; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            int flag = 1;
+            for (int j = 1; j <= i; j++) {
+                System.out.print(flag + " ");
+                flag = flag * (i - j) / j;
+            }
             System.out.println();
         }
     }
