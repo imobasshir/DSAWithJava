@@ -17,22 +17,22 @@ public class VerticalOrderTraversal {
         while (!q.isEmpty()) {
             Tuple tuple = q.poll();
             Node node = tuple.node;
-            int x = tuple.row;
-            int y = tuple.col;
+            int vertical = tuple.row;
+            int level = tuple.col;
 
-            if (!map.containsKey(x)) {
-                map.put(x, new TreeMap<>());
+            if (!map.containsKey(vertical)) {
+                map.put(vertical, new TreeMap<>());
             }
-            if (!map.get(x).containsKey(y)) {
-                map.get(x).put(y, new PriorityQueue<>());
+            if (!map.get(vertical).containsKey(level)) {
+                map.get(vertical).put(level, new PriorityQueue<>());
             }
-            map.get(x).get(y).offer(node.data);
+            map.get(vertical).get(level).offer(node.data);
 
             if (node.left != null) {
-                q.offer(new Tuple(node.left, x - 1, y + 1));
+                q.offer(new Tuple(node.left, vertical - 1, level + 1));
             }
             if (node.right != null) {
-                q.offer(new Tuple(node.right, x + 1, y + 1));
+                q.offer(new Tuple(node.right, vertical + 1, level + 1));
             }
         }
         List<List<Integer>> list = new ArrayList<>();
@@ -58,9 +58,6 @@ public class VerticalOrderTraversal {
         root.right.left = new Node(9);
         root.right.right = new Node(10);
 
-        List<List<Integer>> list = new ArrayList<>();
-        list = findVertical(root);
-
-        System.out.print("The Vertical Traversal is:- " + list);
+        System.out.print("The Vertical Traversal is:- " + findVertical(root));
     }
 }
