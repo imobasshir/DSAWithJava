@@ -15,7 +15,7 @@ public class MinHeap {
         heap.add(6);
         System.out.println(heap);
 
-        Iterator iterator = heap.iterator();
+        Iterator<Integer> iterator = heap.iterator();
         while (iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
