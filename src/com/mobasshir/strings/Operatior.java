@@ -11,7 +11,7 @@ public class Operatior {
         System.out.println((char)('a' + 3));
         System.err.println("a" + 3);
         System.err.println("a" + new ArrayList<>());
-        System.out.println("a" + new Integer(33));
-        System.out.println(new ArrayList<>() + "" + new Integer(4));
+        // System.out.println("a" + new Integer(33));
+        // System.out.println(new ArrayList<>() + "" + new Integer(4));
     }
 }
