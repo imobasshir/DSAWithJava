@@ -8,6 +8,7 @@ public class Prime {
         int n = in.nextInt();
         boolean ans = isPrime(n);
         System.out.println(ans);
+        in.close();
     }
 
     static boolean isPrime(int n) {

@@ -10,5 +10,6 @@ public class Main {
         System.out.println("Hi, My name is Mobasshir Imam");
         Scanner input = new Scanner(System.in);
         System.out.println(input .nextInt());
+        input.close();
     }
 }

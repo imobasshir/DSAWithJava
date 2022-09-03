@@ -9,6 +9,7 @@ public class Armstrong {
         int n = in.nextInt();
         boolean ans = isArmstrong(n);
         System.out.println(ans);
+        in.close();
     }
 //    Code for 3 digit armstrong no
     static boolean isArmstrong(int n) {
@@ -21,5 +22,6 @@ public class Armstrong {
             n /= 10;
         }
         return sum == original;
+        // in.close();
     }
 }

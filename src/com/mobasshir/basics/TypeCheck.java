@@ -12,5 +12,6 @@ public class TypeCheck {
         } else {
             System.out.println("upper case");
         }
+        in.close();
     }
 }

@@ -2,8 +2,8 @@ package com.mobasshir.oops.exceptionHandling;
 
 public class Main {
     public static void main(String[] args) {
-        int a = 5;
-        int b = 0;
+        // int a = 5;
+        // int b = 0;
         try {
             // divide(a, b);
             String name = "Mobasshir";

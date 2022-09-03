@@ -9,6 +9,7 @@ public class Palindrome {
         int n = in.nextInt();
         boolean ans = isPalindrome(n);
         System.out.println(ans);
+        in.close();
     }
     static boolean isPalindrome(int n){
         int sum = 0;

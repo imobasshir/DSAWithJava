@@ -1,7 +1,7 @@
 package com.mobasshir.array.slidingWindow;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+// import java.util.Arrays;
 
 public class MaxOfSubarrayOfSizeK {
     public static void main(String[] args) {
@@ -25,7 +25,7 @@ public class MaxOfSubarrayOfSizeK {
     private static void maxOfAllSubarryBrute(int[] arr, int k) {
         int i = 0;
         int j = 0;
-        int max = Integer.MIN_VALUE;
+        // int max = Integer.MIN_VALUE;
         while (j < arr.length) {
             
             if (j - i + 1 < k) {

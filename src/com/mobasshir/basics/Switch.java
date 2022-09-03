@@ -20,5 +20,6 @@ public class Switch {
             default:
                 System.out.println("Enter valid fruit");
         }
+        in.close();
     }
 }

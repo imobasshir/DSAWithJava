@@ -16,5 +16,6 @@ public class Largest {
             maximum = c;
         }
         System.out.println(maximum);
+        in.close();
     }
 }

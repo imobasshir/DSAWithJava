@@ -23,5 +23,6 @@ public class DayTwo {
             case 1, 2, 3, 4, 5 -> System.out.println("Weekdays");
             case 6, 7 -> System.out.println("Weekend");
         }
+        in.close();
     }
 }

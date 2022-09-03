@@ -11,6 +11,7 @@ public class StringExample {
         String name = in.next();
         String greeting = myGreet(name);
         System.out.println(greeting);
+        in.close();
     }
     static String myGreet(String name){
         String message = "Hello " + name;

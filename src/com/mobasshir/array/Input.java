@@ -41,5 +41,6 @@ public class Input {
 
         // toString method
         // System.out.println(Arrays.toString(arr));
+        in.close();
     }
 }

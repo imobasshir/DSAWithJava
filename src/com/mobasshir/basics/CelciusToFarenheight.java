@@ -10,5 +10,6 @@ public class CelciusToFarenheight {
 
         float tempF = (tempC * 9/5) + 32;
         System.out.println("Temp in F is: "+tempF);
+        input.close();
     }
 }

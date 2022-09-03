@@ -15,5 +15,6 @@ public class Day {
             case 6 -> System.out.println("Saturday");
             case 7 -> System.out.println("Sunday");
         }
+        in.close();
     }
 }

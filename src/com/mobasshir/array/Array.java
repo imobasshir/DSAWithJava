@@ -15,10 +15,10 @@ public class Array {
 
         // // or
 
-        // int[] rollNo2 = {5,6,7,8,9};
+        int[] rollNo2 = {5,6,7,8,9};
 
         // System.out.println(Arrays.toString(rollNo));
-        // System.out.println(Arrays.toString(rollNo2));
+        System.out.println(Arrays.toString(rollNo2));
         // System.out.println(rollNo2[3]);
 
         String[] arr = new String[4];

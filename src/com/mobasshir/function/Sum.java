@@ -16,6 +16,7 @@ public class Sum {
         int num2 = in.nextInt();
         int ans = sum3(num1, num2);
         System.out.println(ans);
+        in.close();
     }
     static int sum3(int a,int b){
         return a + b;
@@ -27,6 +28,7 @@ public class Sum {
         System.out.print("Enter second no: ");
         int num2 = in.nextInt();
         int sum = num1 + num2;
+        in.close();
         return sum;
     }
 
@@ -38,5 +40,6 @@ public class Sum {
         int num2 = in.nextInt();
         int sum = num1 + num2;
         System.out.println("The sum is: "+sum);
+        in.close();
     }
 }

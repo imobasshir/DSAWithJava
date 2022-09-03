@@ -14,5 +14,6 @@ public class Conditionl {
             salary += 1000;
         }
         System.out.println("New Salary: "+salary);
+        input.close();
     }
 }
