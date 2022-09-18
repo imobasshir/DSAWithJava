@@ -43,15 +43,15 @@ public class NodeToDistK {
             curr_level++;
             for (int i = 0; i < size; i++) {
                 Node current = queue.poll();
-                if (current.left != null && visited.get(current.left) == null) {
+                if (current.left != null && !visited.containsKey(current.left)) {
                     queue.offer(current.left);
                     visited.put(current.left, true);
                 }
-                if (current.right != null && visited.get(current.right) == null) {
+                if (current.right != null && !visited.containsKey(current.right)) {
                     queue.offer(current.right);
                     visited.put(current.right, true);
                 }
-                if (parent_track.get(current) != null && visited.get(parent_track.get(current)) == null) {
+                if (parent_track.containsKey(current) && !visited.containsKey(parent_track.get(current))) {
                     queue.offer(parent_track.get(current));
                     visited.put(parent_track.get(current), true);
                 }
