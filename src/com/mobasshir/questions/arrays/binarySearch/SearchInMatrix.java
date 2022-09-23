@@ -30,7 +30,7 @@ public class SearchInMatrix {
 
         int start = 0;
         int end = (n * m) - 1;
-
+        // Binary Search
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (matrix[mid / m][mid % m] == target) {
