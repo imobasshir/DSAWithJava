@@ -26,12 +26,13 @@ public class AddARowInTree {
 
     private static void helper(Node root, int val, int depth, int h) {
         if (depth - 1 == h) {
-            Node newRoot1 = new Node(val);
-            Node newRoot2 = new Node(val);
-            newRoot1.left = root.left;
-            newRoot2.right = root.right;
-            root.left = newRoot1;
-            root.right = newRoot2;
+            Node temp = root.left;
+            root.left = new Node(val);
+            root.left.left = temp;
+
+            temp = root.right;
+            root.right = new Node(val);
+            root.right.right = temp;
             return;
         }
         if (root.left != null)
